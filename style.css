@@ -1,3 +1,5 @@
+/* General Styling */
+
 * {
     margin: 0;
     padding: 0;
@@ -9,6 +11,42 @@ body {
     background-color: #f5f7fb;
     color: #1e293b;
 }
+
+
+/* Navigation Bar */
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 8%;
+    background-color: #ffffff;
+    border-bottom: 1px solid #e2e8f0;
+}
+
+.logo {
+    color: #2563eb;
+    font-size: 24px;
+}
+
+.navbar ul {
+    display: flex;
+    list-style: none;
+    gap: 25px;
+}
+
+.navbar ul li a {
+    text-decoration: none;
+    color: #1e293b;
+    font-weight: bold;
+}
+
+.navbar ul li a:hover {
+    color: #2563eb;
+}
+
+
+/* Hero Section */
 
 .hero {
     min-height: 80vh;
@@ -52,6 +90,9 @@ body {
     margin-bottom: 25px;
 }
 
+
+/* Button */
+
 button {
     background-color: #2563eb;
     color: white;
@@ -66,6 +107,9 @@ button:hover {
     background-color: #1d4ed8;
 }
 
+
+/* Sections */
+
 section:not(.hero) {
     padding: 50px 20px;
     max-width: 900px;
@@ -79,11 +123,17 @@ section h2 {
     color: #1e293b;
 }
 
+
+/* About Section */
+
 .about p {
     text-align: center;
     line-height: 1.8;
     font-size: 17px;
 }
+
+
+/* Skills Section */
 
 .skills-container {
     display: flex;
@@ -99,6 +149,9 @@ section h2 {
     border: 1px solid #dbe3f0;
     font-weight: bold;
 }
+
+
+/* Projects Section */
 
 .project-card {
     background-color: white;
@@ -117,15 +170,25 @@ section h2 {
     line-height: 1.6;
 }
 
+
+/* Responsive Design */
+
 @media (max-width: 600px) {
+    .navbar {
+        flex-direction: column;
+        gap: 15px;
+    }
+    .navbar ul {
+        gap: 15px;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
     .hero h1 {
         font-size: 32px;
     }
-
     .hero h2 {
         font-size: 20px;
     }
-
     section h2 {
         font-size: 25px;
     }
