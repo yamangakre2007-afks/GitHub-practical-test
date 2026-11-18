@@ -121,12 +121,26 @@ section h2 {
     .hero h1 {
         font-size: 32px;
     }
-
     .hero h2 {
         font-size: 20px;
     }
-
     section h2 {
         font-size: 25px;
     }
+}
+
+
+/* Footer */
+
+.footer {
+    background-color: #1e293b;
+    color: white;
+    text-align: center;
+    padding: 25px 15px;
+    margin-top: 30px;
+}
+
+.footer p {
+    margin: 8px 0;
+    font-size: 14px;
 }
